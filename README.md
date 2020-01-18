@@ -1,6 +1,6 @@
 # https://phpstatic.com
 
-one PHP package able to any linux distribution version.
+PHP package able to install at any linux distribution version.
 
 # debian install
 
