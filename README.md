@@ -2,7 +2,7 @@
 
 PHP package able to install at any linux distribution version.
 
-# debian install
+# debian, ubuntu install
 
 ```sh
 curl -O https://phpstatic.com/php-static-7.3_7.3.13_amd64.deb
