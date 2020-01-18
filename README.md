@@ -2,7 +2,7 @@
 
 PHP package able to install at any linux distribution version.
 
-# debian, ubuntu install
+# debian, ubuntu 
 
 ```sh
 curl -O https://phpstatic.com/php-static-7.3_7.3.13_amd64.deb
@@ -11,7 +11,7 @@ systemctl daemon-reload
 systemctl enable php-fpm
 systemctl start php-fpm
 ```
-# redhat, centos install
+# redhat, centos 
 
 https://phpstatic.com/php-static-7.3-7.3.13-2.x86_64.rpm
 
