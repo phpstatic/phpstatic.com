@@ -1,5 +1,5 @@
 # phpstatic.com
-PHP static packages
+one PHP package able to any linux distribution version.
 
 # debian install
 
