@@ -13,7 +13,7 @@ systemctl start php-fpm
 ```
 # redhat, centos install
 
-not ready yet.
+https://phpstatic.com/php-static-7.3-7.3.13-2.x86_64.rpm
 
 # php -m
 ```ini
