@@ -80,7 +80,6 @@ xml
 xmlreader
 xmlwriter
 yaml
-Zend OPcache
 zip
 zlib
 zstd
