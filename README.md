@@ -10,5 +10,5 @@ systemctl daemon-reload
 systemctl enable php-fpm
 systemctl start php-fpm
 ```
-# redhad, centos install
+# redhat, centos install
 
