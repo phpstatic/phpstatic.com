@@ -17,6 +17,14 @@ systemctl start php-fpm
 
 https://phpstatic.com/php-static-7.4-latest.x86_64.rpm
 
+# alpine
+
+not ready yet
+
+# macOS
+
+not ready yet
+
 # php -m
 ```ini
 [PHP Modules]
