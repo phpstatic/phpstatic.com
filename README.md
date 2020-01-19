@@ -1,6 +1,6 @@
 # https://phpstatic.com
 
-PHP package able to install at any linux distribution version.
+PHP package able to install at distribution or macOS.
 
 # debian, ubuntu 
 
