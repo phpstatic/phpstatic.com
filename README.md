@@ -2,6 +2,11 @@
 
 PHP package able to install at linux or macOS.
 
+for linuc CPU > westmere. 
+
+for macOS CPU > haswell, os >= 10.12.
+
+
 # debian, ubuntu 
 
 https://phpstatic.com/php-static-7.4_latest_amd64.deb
