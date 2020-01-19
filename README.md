@@ -4,10 +4,10 @@ PHP package able to install at any linux distribution version.
 
 # debian, ubuntu 
 
-https://phpstatic.com/php-static-7.3_7.3.13_amd64.deb
+https://phpstatic.com/php-static-7.4_1_amd64.deb
 
 ```sh
-curl -O https://phpstatic.com/php-static-7.3_7.3.13_amd64.deb
+curl -O https://phpstatic.com/php-static-7.4_1_amd64.deb
 dpkg -i php-static-7.3_7.3.13_amd64.deb
 systemctl daemon-reload
 systemctl enable php-fpm
@@ -15,7 +15,7 @@ systemctl start php-fpm
 ```
 # redhat, centos 
 
-https://phpstatic.com/php-static-7.3-7.3.13-2.x86_64.rpm
+https://phpstatic.com/php-static-7.4-1-1.x86_64.rpm
 
 # php -m
 ```ini
