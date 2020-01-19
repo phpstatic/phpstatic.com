@@ -2,9 +2,9 @@
 
 PHP package able to install at linux or macOS.
 
-for linuc CPU > westmere. 
+for linuc CPU >= westmere. 
 
-for macOS CPU > haswell, os >= 10.12.
+for macOS CPU >= haswell, os >= 10.12.
 
 
 # debian, ubuntu 
