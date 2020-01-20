@@ -2,9 +2,9 @@
 
 PHP package able to install at linux or macOS.
 
-for linuc CPU >= westmere. 
+linux CPU need support AVX,  kernel > 2.6.35
 
-for macOS CPU >= haswell, os >= 10.14.
+macOS need CPU >= haswell, os >= 10.14
 
 
 # debian, ubuntu 
