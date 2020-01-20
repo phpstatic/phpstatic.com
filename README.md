@@ -4,7 +4,7 @@ PHP package able to install at linux or macOS.
 
 linux CPU need support AVX,  kernel > 2.6.35
 
-macOS need CPU >= haswell, os >= 10.14
+macOS CPU >= haswell, os >= 10.14
 
 
 # debian, ubuntu 
