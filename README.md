@@ -33,7 +33,7 @@ systemctl enable php-fpm
 systemctl start php-fpm
 ```
 
-# other linux
+# any linux
 
 * https://phpstatic.com/php-static-7.4.latest-linux.tar.xz
 * https://phpstatic.com/php-static-7.3.latest-linux.tar.xz
