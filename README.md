@@ -2,7 +2,7 @@
 
 PHP package able to install at linux or macOS.
 
-linux need  CPU support AVX,  kernel > 2.6.35
+linux need  CPU support AVX,  kernel >= 2.6.35
 
 macOS need CPU >= haswell, os >= 10.14
 
