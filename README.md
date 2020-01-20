@@ -12,6 +12,7 @@ macOS package need CPU >= haswell, os >= 10.14
 * https://phpstatic.com/php-static-7.4_latest_amd64.deb
 * https://phpstatic.com/php-static-7.3_latest_amd64.deb
 * https://phpstatic.com/php-static-7.2_latest_amd64.deb
+* https://phpstatic.com/nginx-static-latest_amd64.deb
 
 ```sh
 curl -O https://phpstatic.com/php-static-7.4_latest_amd64.deb
@@ -23,6 +24,7 @@ dpkg -i php-static-7.4_latest_amd64.deb
 * https://phpstatic.com/php-static-7.4-latest.x86_64.rpm
 * https://phpstatic.com/php-static-7.3-latest.x86_64.rpm
 * https://phpstatic.com/php-static-7.2-latest.x86_64.rpm
+* https://phpstatic.com/nginx-static-latest.x86_64.rpm
 
 
 ```sh
@@ -38,6 +40,7 @@ systemctl start php-fpm
 * https://phpstatic.com/php-static-7.4.latest-linux.tar.xz
 * https://phpstatic.com/php-static-7.3.latest-linux.tar.xz
 * https://phpstatic.com/php-static-7.2.latest-linux.tar.xz
+* https://phpstatic.com/nginx-static-latest-linux.tar.xz
 
 
 ```sh
