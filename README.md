@@ -16,9 +16,7 @@ macOS package need CPU >= haswell, os >= 10.14
 ```sh
 curl -O https://phpstatic.com/php-static-7.4_latest_amd64.deb
 dpkg -i php-static-7.4_latest_amd64.deb
-systemctl daemon-reload
-systemctl enable php-fpm
-systemctl start php-fpm
+/etc/init.d/php-fpm status
 ```
 # redhat, centos 
 
@@ -26,17 +24,42 @@ systemctl start php-fpm
 * https://phpstatic.com/php-static-7.3-latest.x86_64.rpm
 * https://phpstatic.com/php-static-7.2-latest.x86_64.rpm
 
+
+```sh
+curl -O https://phpstatic.com/php-static-7.4-latest.x86_64.rpm
+rpm -i php-static-7.4-latest.x86_64.rpm
+systemctl daemon-reload
+systemctl enable php-fpm
+systemctl start php-fpm
+```
+
 # other linux
 
 * https://phpstatic.com/php-static-7.4.latest-linux.tar.xz
 * https://phpstatic.com/php-static-7.3.latest-linux.tar.xz
 * https://phpstatic.com/php-static-7.2.latest-linux.tar.xz
 
+
+```sh
+curl -O https://phpstatic.com/php-static-7.4.latest-linux.tar.xz
+tar xvf php-static-7.4.latest-linux.tar.xz -C /
+systemctl daemon-reload
+systemctl enable php-fpm
+systemctl start php-fpm
+```
+
+
 # macOS
 
 * https://phpstatic.com/php-static-7.4.latest-osx.tar.xz
 * https://phpstatic.com/php-static-7.3.latest-osx.tar.xz
 * https://phpstatic.com/php-static-7.2.latest-osx.tar.xz
+
+```sh
+curl -O https://phpstatic.com/php-static-7.4.latest-osx.tar.xz
+tar xvf php-static-7.4.latest-osx.tar.xz -C /
+```
+
 
 # BSD
 
