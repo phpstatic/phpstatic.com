@@ -2,9 +2,9 @@
 
 PHP package able to install at linux or macOS.
 
-linux need  CPU support AVX,  kernel >= 2.6.35
+linux package need  CPU support AVX,  kernel >= 2.6.35
 
-macOS need CPU >= haswell, os >= 10.14
+macOS package need CPU >= haswell, os >= 10.14
 
 
 # debian, ubuntu 
@@ -38,7 +38,7 @@ systemctl start php-fpm
 * https://phpstatic.com/php-static-7.3.latest-osx.tar.xz
 * https://phpstatic.com/php-static-7.2.latest-osx.tar.xz
 
-# BSD & Windows
+# BSD
 
 not ready yet
 
