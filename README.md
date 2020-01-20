@@ -24,11 +24,11 @@ https://phpstatic.com/php-static-7.4-latest.x86_64.rpm
 
 # other linux
 
-https://phpstatic.com/php-static-7.3.13-linux.tar.xz
+https://phpstatic.com/php-static-7.3.latest-linux.tar.xz
 
 # macOS
 
-https://phpstatic.com/php-static-7.3.13-osx.tar.xz
+https://phpstatic.com/php-static-7.3.latest-osx.tar.xz
 
 # BSD & Windows
 
