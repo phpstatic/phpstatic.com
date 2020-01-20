@@ -10,6 +10,8 @@ macOS need CPU >= haswell, os >= 10.14
 # debian, ubuntu 
 
 https://phpstatic.com/php-static-7.4_latest_amd64.deb
+https://phpstatic.com/php-static-7.3_latest_amd64.deb
+https://phpstatic.com/php-static-7.2_latest_amd64.deb
 
 ```sh
 curl -O https://phpstatic.com/php-static-7.4_latest_amd64.deb
@@ -21,14 +23,20 @@ systemctl start php-fpm
 # redhat, centos 
 
 https://phpstatic.com/php-static-7.4-latest.x86_64.rpm
+https://phpstatic.com/php-static-7.3-latest.x86_64.rpm
+https://phpstatic.com/php-static-7.2-latest.x86_64.rpm
 
 # other linux
 
+https://phpstatic.com/php-static-7.4.latest-linux.tar.xz
 https://phpstatic.com/php-static-7.3.latest-linux.tar.xz
+https://phpstatic.com/php-static-7.2.latest-linux.tar.xz
 
 # macOS
 
+https://phpstatic.com/php-static-7.4.latest-osx.tar.xz
 https://phpstatic.com/php-static-7.3.latest-osx.tar.xz
+https://phpstatic.com/php-static-7.2.latest-osx.tar.xz
 
 # BSD & Windows
 
