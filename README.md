@@ -67,9 +67,12 @@ apk add php-static-7.4 nginx-static
 ```sh
 curl -O https://phpstatic.com/nginx-static-latest-linux-x64.tar.xz
 tar xvf nginx-static-* -C /
-systemctl daemon-reload
-systemctl enable php-fpm
-systemctl start php-fpm
+
+/usr/local/bin/php-fpm
+killall php-fpm
+
+/usr/sbin/nginx
+/usr/sbin/nginx -s stop
 ```
 
 
