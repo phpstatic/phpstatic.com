@@ -14,6 +14,8 @@ macOS package need CPU >= haswell, os >= 10.14
 * https://phpstatic.com/php-static-7.2-latest-amd64.deb
 * https://phpstatic.com/nginx-static-latest-amd64.deb
 
+this work with systemd,  for old debian/ubuntu please try https://phpstatic.com/linux/
+
 ```sh
 echo deb https://phpstatic.com/debian/ / > /etc/apt/sources.list.d/phpstatic.list
 curl -L https://phpstatic.com/repo.gpg | sudo apt-key add -
@@ -28,6 +30,8 @@ apt-get install php-static-7.4 nginx-static
 * https://phpstatic.com/php-static-7.2-latest.x86_64.rpm
 * https://phpstatic.com/nginx-static-latest-x86_64.rpm
 
+
+this work with systemd,  for old debian/ubuntu please try https://phpstatic.com/linux/
 
 ```sh
 curl -L https://phpstatic.com/php-static-7.4-latest.x86_64.rpm -o /etc/yum.repos.d/phpstatic.repo
