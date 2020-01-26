@@ -103,6 +103,7 @@ not ready yet
 # php -m
 ```ini
 [PHP Modules]
+amqp
 apcu
 bcmath
 brotli
@@ -124,6 +125,7 @@ iconv
 igbinary
 intl
 json
+json_post
 jwt
 libxml
 mbstring
@@ -164,7 +166,6 @@ sysvshm
 tideways_xhprof
 tidy
 tokenizer
-xdebug
 xlswriter
 xml
 xmlreader
@@ -173,11 +174,13 @@ yaml
 Zend OPcache
 zip
 zlib
+zmq
 zstd
 
 [Zend Modules]
 Xdebug
 Zend OPcache
+
 ```
 
 # nginx -V
