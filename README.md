@@ -31,7 +31,7 @@ apt-get install php-static-7.4 nginx-static
 * https://phpstatic.com/nginx-static-latest-x86_64.rpm
 
 
-this work with systemd,  for old debian/ubuntu please try https://phpstatic.com/linux/
+this work with systemd,  for old redhat/centos please try https://phpstatic.com/linux/
 
 ```sh
 curl -L https://phpstatic.com/php-static-7.4-latest.x86_64.rpm -o /etc/yum.repos.d/phpstatic.repo
