@@ -34,7 +34,7 @@ apt-get install php-static-7.4 nginx-static
 this work with systemd,  for old redhat/centos please try https://phpstatic.com/linux/
 
 ```sh
-curl -L https://phpstatic.com/php-static-7.4-latest.x86_64.rpm -o /etc/yum.repos.d/phpstatic.repo
+curl -L https://phpstatic.com/centos/phpstatic.repo -o /etc/yum.repos.d/phpstatic.repo
 yum update
 yum install php-static-7.4 nginx-static -y 
 systemctl status php-fpm
