@@ -94,7 +94,7 @@ not ready yet
 
 # xdebug, tideways_xhprof
 
-`xdebug` and `tideways_xhprof` is disabled, to enable it add `disable_extensions=none` into `php.ini`.
+`xdebug` and `tideways_xhprof` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
 
 # php -m
 ```ini
