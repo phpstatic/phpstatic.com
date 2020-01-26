@@ -87,7 +87,7 @@ curl -O https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.xz
 tar xvf php-static-* -C /
 ```
 
-# windows 
+# Windows 
 
 please try https://docs.microsoft.com/en-us/windows/wsl/install-win10 
 
