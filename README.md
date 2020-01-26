@@ -92,6 +92,10 @@ tar xvf php-static-* -C /
 
 not ready yet
 
+# xdebug, tideways_xhprof
+
+`xdebug` and `tideways_xhprof` is disabled, to enable it add `disable_extensions=none` into `php.ini`.
+
 # php -m
 ```ini
 [PHP Modules]
@@ -134,11 +138,14 @@ pgsql
 Phar
 posix
 protobuf
+psr
+rdkafka
 redis
 Reflection
 session
 shmop
 SimpleXML
+snappy
 soap
 sockets
 sodium
@@ -150,18 +157,22 @@ swoole_orm
 sysvmsg
 sysvsem
 sysvshm
+tideways_xhprof
 tidy
 tokenizer
+xdebug
 xlswriter
 xml
 xmlreader
 xmlwriter
 yaml
+Zend OPcache
 zip
 zlib
 zstd
 
 [Zend Modules]
+Xdebug
 Zend OPcache
 ```
 
