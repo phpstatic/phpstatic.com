@@ -65,7 +65,7 @@ apk add php-static-7.4 nginx-static
 
 
 ```sh
-curl -O https://phpstatic.com/nginx-static-latest-linux-x64.tar.xz
+curl -O https://phpstatic.com/php-static-7.4-latest-linux-x64.tar.xz
 tar xvf nginx-static-* -C /
 
 /usr/local/bin/php-fpm
@@ -83,7 +83,7 @@ killall php-fpm
 * https://phpstatic.com/php-static-7.2-latest-osx-x64.tar.xz
 
 ```sh
-curl -O https://phpstatic.com/php-static-7.4.latest-osx.tar.xz
+curl -O https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.xz
 tar xvf php-static-* -C /
 ```
 
