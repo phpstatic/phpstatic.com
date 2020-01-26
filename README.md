@@ -89,7 +89,7 @@ tar xvf php-static-* -C /
 
 # Windows 
 
-please try https://docs.microsoft.com/en-us/windows/wsl/install-win10 
+try https://docs.microsoft.com/en-us/windows/wsl/install-win10 
 
 
 # BSD
