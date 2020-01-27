@@ -96,11 +96,11 @@ try https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 not ready yet
 
-# xdebug, tideways_xhprof, SPX
+# [xdebug](https://github.com/xdebug/xdebug), [tideways_xhprof](https://github.com/tideways/php-xhprof-extension.git), [SPX](https://github.com/NoiseByNorthwest/php-spx.git)
 
 `xdebug`, `tideways_xhprof`, `SPX` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
 
-# php -m
+# [php -m](https://phpstatic.com/php-static-help.html)
 ```ini
 [PHP Modules]
 amqp
