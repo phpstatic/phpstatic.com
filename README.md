@@ -96,9 +96,9 @@ try https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 not ready yet
 
-# xdebug, tideways_xhprof
+# xdebug, tideways_xhprof, SPX
 
-`xdebug` and `tideways_xhprof` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
+`xdebug`, `tideways_xhprof`, `SPX` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
 
 # php -m
 ```ini
