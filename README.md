@@ -134,6 +134,7 @@ mongodb
 msgpack
 mysqli
 mysqlnd
+OAuth
 openssl
 pcre
 PDO
@@ -146,8 +147,10 @@ posix
 protobuf
 psr
 rdkafka
+readline
 redis
 Reflection
+SeasLog
 session
 shmop
 SimpleXML
@@ -156,6 +159,7 @@ soap
 sockets
 sodium
 SPL
+SPX
 sqlite3
 standard
 swoole
@@ -166,6 +170,7 @@ sysvshm
 tideways_xhprof
 tidy
 tokenizer
+xdebug
 xlswriter
 xml
 xmlreader
