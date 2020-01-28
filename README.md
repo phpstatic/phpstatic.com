@@ -82,6 +82,7 @@ killall php-fpm
 ```sh
 docker pull phpstatic/php-fpm:7.4.2
 docker run --name php -itd --mount type=bind,source=/var/www,target=/var/www --mount source=php_log,target=/var/log --mount source=php_etc,target=/usr/local/etc/php --network=host phpstatic/php-fpm:7.4.2
+docker logs php
 ```
 
 
