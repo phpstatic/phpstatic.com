@@ -42,7 +42,6 @@ systemctl status php-fpm
 
 # alpine 
 
-
 * https://phpstatic.com/php-static-7.4-latest-x86_64.apk
 * https://phpstatic.com/php-static-7.3-latest-x86_64.apk
 * https://phpstatic.com/php-static-7.2-latest-x86_64.apk
@@ -54,6 +53,17 @@ echo https://phpstatic.com/alpine >> /etc/apk/repositories
 apk update
 apk add php-static-7.4 nginx-static 
 /etc/init.d/php-fpm status
+```
+
+# docker
+
+* https://hub.docker.com/r/phpstatic/php-fpm/tags
+
+```sh
+docker pull phpstatic/php-fpm:7.4.2
+docker run --name php -itd --mount type=bind,source=/var/www,target=/var/www --mount source=php_log,target=/var/log --mount source=php_etc,target=/usr/local/etc/php --network=host phpstatic/php-fpm:7.4.2
+docker logs php
+docker volume inspect php_etc
 ```
 
 # others linux
@@ -73,17 +83,6 @@ killall php-fpm
 
 /usr/sbin/nginx
 /usr/sbin/nginx -s stop
-```
-
-# docker
-
-* https://hub.docker.com/r/phpstatic/php-fpm/tags
-
-```sh
-docker pull phpstatic/php-fpm:7.4.2
-docker run --name php -itd --mount type=bind,source=/var/www,target=/var/www --mount source=php_log,target=/var/log --mount source=php_etc,target=/usr/local/etc/php --network=host phpstatic/php-fpm:7.4.2
-docker logs php
-docker volume inspect php_etc
 ```
 
 
