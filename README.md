@@ -77,7 +77,7 @@ killall php-fpm
 
 # docker
 
-* https://hub.docker.com/r/phpstatic/php-fpm-73/tags
+* https://hub.docker.com/r/phpstatic/php-fpm/tags
 
 
 # macOS
