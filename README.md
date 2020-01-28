@@ -58,14 +58,14 @@ apk add php-static-7.4 nginx-static
 
 # others linux
 
-* https://phpstatic.com/php-static-7.4-latest-linux-x64.tar.xz
-* https://phpstatic.com/php-static-7.3-latest-linux-x64.tar.xz
-* https://phpstatic.com/php-static-7.2-latest-linux-x64.tar.xz
-* https://phpstatic.com/nginx-static-latest-linux-x64.tar.xz
+* https://phpstatic.com/php-static-7.4-latest-linux-x64.tar.gz
+* https://phpstatic.com/php-static-7.3-latest-linux-x64.tar.gz
+* https://phpstatic.com/php-static-7.2-latest-linux-x64.tar.gz
+* https://phpstatic.com/nginx-static-latest-linux-x64.tar.gz
 
 
 ```sh
-curl -O https://phpstatic.com/php-static-7.4-latest-linux-x64.tar.xz
+curl -O https://phpstatic.com/php-static-7.4-latest-linux-x64.tar.gz
 tar xvf nginx-static-* -C /
 
 /usr/local/bin/php-fpm
@@ -78,12 +78,12 @@ killall php-fpm
 
 # macOS
 
-* https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.xz
-* https://phpstatic.com/php-static-7.3-latest-osx-x64.tar.xz
-* https://phpstatic.com/php-static-7.2-latest-osx-x64.tar.xz
+* https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.gz
+* https://phpstatic.com/php-static-7.3-latest-osx-x64.tar.gz
+* https://phpstatic.com/php-static-7.2-latest-osx-x64.tar.gz
 
 ```sh
-curl -O https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.xz
+curl -O https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.gz
 tar xvf php-static-* -C /
 ```
 
