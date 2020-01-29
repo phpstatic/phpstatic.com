@@ -141,6 +141,7 @@ gmp
 hash
 iconv
 igbinary
+imap
 intl
 json
 json_post
@@ -154,6 +155,7 @@ mysqli
 mysqlnd
 OAuth
 openssl
+pcntl
 pcre
 PDO
 pdo_mysql
@@ -170,6 +172,41 @@ redis
 Reflection
 SeasLog
 session
+shmop
+SimpleXML
+snappy
+soap
+sockets
+sodium
+SPL
+SPX
+sqlite3
+standard
+swoole
+swoole_orm
+sysvmsg
+sysvsem
+sysvshm
+tideways_xhprof
+tidy
+tokenizer
+xdebug
+xlswriter
+xml
+xmlreader
+xmlwriter
+yaml
+yar
+Zend OPcache
+zip
+zlib
+zmq
+zstd
+
+[Zend Modules]
+Xdebug
+Zend OPcache
+
 shmop
 SimpleXML
 snappy
