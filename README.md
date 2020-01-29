@@ -96,6 +96,10 @@ killall php-fpm
 ```sh
 curl -O https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.gz
 tar xvf php-static-* -C /
+otool -L /usr/local/bin/php
+/usr/local/bin/php:
+	/usr/lib/libresolv.9.dylib (compatibility version 1.0.0, current version 1.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.250.1)
 ```
 
 # Windows 
