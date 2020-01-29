@@ -59,6 +59,8 @@ apk add php-static-7.4 nginx-static
 
 * https://hub.docker.com/r/phpstatic/php
 
+run this on your project dirs:
+
 ```sh
 docker pull phpstatic/php:7.4.2
 docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.2
