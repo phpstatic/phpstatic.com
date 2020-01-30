@@ -118,7 +118,7 @@ not ready yet
 
 `xdebug`, `tideways_xhprof`, `SPX` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
 
-# [php -m](https://phpstatic.com/php-static-help.html)
+# [php -m](https://phpstatic.com/phpinfo.html)
 ```ini
 [PHP Modules]
 amqp
