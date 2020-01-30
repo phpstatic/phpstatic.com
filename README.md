@@ -212,7 +212,7 @@ Zend OPcache
 
 # nginx -V
 
-nginx 1.16.1 is build with http3, njs(0.3.8), ssl_stapling support. 
+nginx 1.16.1 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.3.8), ssl_stapling support. 
 
 ```sh
 nginx version: nginx/1.16.1 (nginx)
