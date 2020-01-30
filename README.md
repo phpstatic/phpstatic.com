@@ -107,12 +107,12 @@ otool -L /usr/local/bin/php
 
 # Windows 
 
-try https://docs.microsoft.com/en-us/windows/wsl/install-win10 
+try docker or https://docs.microsoft.com/en-us/windows/wsl/install-win10 
 
 
 # BSD
 
-not ready yet
+not ready yet, try docker 
 
 # [xdebug](https://github.com/xdebug/xdebug), [tideways_xhprof](https://github.com/tideways/php-xhprof-extension.git), [SPX](https://github.com/NoiseByNorthwest/php-spx.git)
 
