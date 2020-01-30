@@ -212,14 +212,14 @@ Zend OPcache
 
 # nginx -V
 
-nginx 1.16.1 is build with http2/http3 support. 
+nginx 1.16.1 is build with http3 support. 
 
 ```sh
 nginx version: nginx/1.16.1 (nginx)
 built by gcc version 9.2.0
 built with OpenSSL 1.1.0 (compatible; BoringSSL) (running with BoringSSL)
 TLS SNI support enabled
-configure arguments:--conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/lock/nginx.lock --user=www-data --group=www-data --without-select_module --with-poll_module --with-file-aio --with-threads --with-http_ssl_module --with-http_v2_module --with-http_realip_module --with-http_sub_module --with-http_stub_status_module --with-http_geoip_module --with-http_slice_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_auth_request_module --with-http_secure_link_module --with-stream --with-stream_ssl_module --with-stream_geoip_module --with-stream_ssl_preread_module --with-stream_realip_module --with-pcre --with-pcre-jit --with-openssl --with-zlib --with-zlib-asm=pentiumpro --with-libatomic --with-http_addition_module --without-http_uwsgi_module --with-mail --with-mail_ssl_module --with-http_mp4_module --with-http_flv_module --add-module=devel_kit --add-module=dav --with-http_dav_module --add-module=brotli --add-module=zstd --add-module=substitutions_filter --add-module=headers-more --add-module=h264_streaming --add-module=vod --add-module=flv --add-module=dynamic_limit_req --add-module=slice --add-module=njs/nginx --add-module=vts --add-module=websockify
+configure arguments:--conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/lock/nginx.lock --user=www-data --group=www-data --without-select_module --with-poll_module --with-file-aio --with-threads --with-http_ssl_module --with-http_v2_module --with-http_realip_module --with-http_sub_module --with-http_stub_status_module --with-http_geoip_module --with-http_slice_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_auth_request_module --with-http_secure_link_module --with-stream --with-stream_ssl_module --with-stream_geoip_module --with-stream_ssl_preread_module --with-stream_realip_module --with-pcre --with-pcre-jit --with-openssl --with-zlib --with-zlib-asm=pentiumpro --with-libatomic --with-http_addition_module --without-http_uwsgi_module --with-mail --with-mail_ssl_module --with-http_mp4_module --with-http_flv_module --add-module=devel_kit --add-module=dav --with-http_dav_module --add-module=brotli --add-module=zstd --add-module=substitutions_filter --add-module=headers-more --add-module=h264_streaming --add-module=vod --add-module=flv --add-module=dynamic_limit_req --add-module=slice --add-module=njs/nginx --add-module=vts --add-module=websockify --with-http_v3_module --with-openssl --with-quiche
 
 nginx version: nginx/1.17.8 (nginx)
 built by gcc version 9.2.0
