@@ -7,6 +7,21 @@ linux package need  CPU support AVX,  kernel >= 4.4.10
 macOS package need CPU >= haswell, os >= 10.14
 
 
+# docker
+
+* https://hub.docker.com/r/phpstatic/php
+
+run this on your project dirs:
+
+```sh
+docker pull phpstatic/php:7.4.2
+docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.2
+docker logs php74
+docker volume inspect php74_etc
+docker exec -i -t php74 composer install
+docker exec -i -t php74 ash
+```
+
 # debian, ubuntu 
 
 * https://phpstatic.com/php-static-7.4-latest-amd64.deb
@@ -14,7 +29,7 @@ macOS package need CPU >= haswell, os >= 10.14
 * https://phpstatic.com/php-static-7.2-latest-amd64.deb
 * https://phpstatic.com/nginx-static-latest-amd64.deb
 
-this work with systemd,  for old debian/ubuntu please try https://phpstatic.com/linux/
+this work with systemd,  for old debian/ubuntu please try docker or https://phpstatic.com/linux/
 
 ```sh
 echo deb https://phpstatic.com/debian/ / > /etc/apt/sources.list.d/phpstatic.list
@@ -31,7 +46,7 @@ apt-get install php-static-7.4 nginx-static
 * https://phpstatic.com/nginx-static-latest-x86_64.rpm
 
 
-this work with systemd,  for old redhat/centos please try https://phpstatic.com/linux/
+this work with systemd,  for old redhat/centos please try docker or https://phpstatic.com/linux/
 
 ```sh
 curl -L https://phpstatic.com/centos/phpstatic.repo -o /etc/yum.repos.d/phpstatic.repo
@@ -53,21 +68,6 @@ echo https://phpstatic.com/alpine >> /etc/apk/repositories
 apk update
 apk add php-static-7.4 nginx-static 
 /etc/init.d/php-fpm status
-```
-
-# docker
-
-* https://hub.docker.com/r/phpstatic/php
-
-run this on your project dirs:
-
-```sh
-docker pull phpstatic/php:7.4.2
-docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.2
-docker logs php74
-docker volume inspect php74_etc
-docker exec -i -t php74 composer install
-docker exec -i -t php74 ash
 ```
 
 # others linux
@@ -138,6 +138,7 @@ filter
 ftp
 gd
 gmp
+grpc
 hash
 iconv
 igbinary
