@@ -4,7 +4,9 @@ PHP package able to install at linux or macOS.
 
 linux package need  CPU support AVX,  kernel >= 4.4.10
 
-macOS package need CPU >= haswell, os >= 10.14
+macOS package need CPU >= Sandy Bridge(2011), os >= 10.9(Mavericks).
+
+macOS package also work for VM with Penryn(+aes, +avx) CPU.
 
 
 # docker
