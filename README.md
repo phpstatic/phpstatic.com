@@ -7,9 +7,7 @@ macOS package need CPU >= Sandy Bridge(2011), os >= 10.9(Mavericks).
 macOS package also work for VM with Penryn(+aes, +avx) CPU.
 
 
-# docker
-
-* https://hub.docker.com/r/phpstatic/php
+# [docker](https://hub.docker.com/r/phpstatic/php)
 
 run this on your project dirs:
 
