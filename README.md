@@ -1,7 +1,5 @@
 # https://phpstatic.com
 
-PHP package able to install at linux or macOS.
-
 linux package need  CPU support AVX,  kernel >= 4.4.10
 
 macOS package need CPU >= Sandy Bridge(2011), os >= 10.9(Mavericks).
