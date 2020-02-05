@@ -8,7 +8,7 @@ macOS package also work for VM with Penryn(+aes, +avx) CPU.
 
 # [benchmarks](https://github.com/phpstatic/phpstatic.com/blob/master/benchmarks.md)
 
- This PHP is build with `-Ofast` for better performance.
+ This PHP package build with `-Ofast` for better performance.
  
  Linux package build with `Full RELRO`, `NX enabled`, `pie`, `noexecstack` to improve security.
 
