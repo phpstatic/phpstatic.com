@@ -1,7 +1,5 @@
 # macOS 10.15.3, I7-7700K
 
-[phpbench](https://github.com/phpbench/phpbench.git) 
-
 php-static-7.3.14 without opcache
 ```sh
 PhpBench 0.8.0. Running benchmarks.
