@@ -3,71 +3,69 @@ test environment：macOS 10.15.3, I7-7700K
 php-static-7.3.14 
 ```sh
 PhpBench 0.17.0 Running benchmarks.
-Using configuration file: /opt/web/bench/phpbench.json.dist
-
 \PhpBench\Benchmarks\Micro\HashingBench
 
-    benchAlgos # 0..........................I9 [μ Mo]/r: 0.185 0.186 (μs) [μSD μRSD]/r: 0.002μs 1.00%
-    benchAlgos # 1..........................I9 [μ Mo]/r: 0.386 0.377 (μs) [μSD μRSD]/r: 0.025μs 6.42%
+    benchAlgos # 0..........................I9 [μ Mo]/r: 0.189 0.190 (μs) [μSD μRSD]/r: 0.001μs 0.60%
+    benchAlgos # 1..........................I9 [μ Mo]/r: 0.396 0.396 (μs) [μSD μRSD]/r: 0.001μs 0.24%
 
 \PhpBench\Micro\Math\KdeBench
 
-    benchKde # ten points...................I9 [μ Mo]/r: 0.0222 0.0221 (ms) [μSD μRSD]/r: 0.000ms 0.72%
-    benchKde # twenty points................I9 [μ Mo]/r: 0.0393 0.0388 (ms) [μSD μRSD]/r: 0.002ms 4.26%
-    benchKde # forty points.................I9 [μ Mo]/r: 0.0675 0.0671 (ms) [μSD μRSD]/r: 0.001ms 1.00%
+    benchKde # ten points...................I9 [μ Mo]/r: 0.0212 0.0209 (ms) [μSD μRSD]/r: 0.001ms 3.66%
+    benchKde # twenty points................I9 [μ Mo]/r: 0.0376 0.0372 (ms) [μSD μRSD]/r: 0.001ms 1.55%
+    benchKde # forty points.................I9 [μ Mo]/r: 0.0672 0.0667 (ms) [μSD μRSD]/r: 0.001ms 1.07%
 
 \PhpBench\Micro\Math\StatisticsBench
 
-    benchVariance...........................I9 [μ Mo]/r: 0.67 0.66 (μs) [μSD μRSD]/r: 0.021μs 3.17%
-    benchStDev..............................I9 [μ Mo]/r: 0.72 0.72 (μs) [μSD μRSD]/r: 0.022μs 3.07%
+    benchVariance...........................I9 [μ Mo]/r: 0.70 0.69 (μs) [μSD μRSD]/r: 0.024μs 3.43%
+    benchStDev..............................I9 [μ Mo]/r: 0.76 0.75 (μs) [μSD μRSD]/r: 0.019μs 2.56%
 
 \PhpBench\Benchmarks\Micro\DependencyInjection\ContainerBench
 
-    benchInitNoExtensions...................I9 [μ Mo]/r: 0.000033 0.000032 (s) [μSD μRSD]/r: 0.000s 8.38%
-    benchInitCoreExtension..................I9 [μ Mo]/r: 0.000245 0.000242 (s) [μSD μRSD]/r: 0.000s 3.50%
+    benchInitNoExtensions...................I9 [μ Mo]/r: 0.000013 0.000013 (s) [μSD μRSD]/r: 0.000s 7.03%
+    benchInitCoreExtension..................I9 [μ Mo]/r: 0.000123 0.000120 (s) [μSD μRSD]/r: 0.000s 6.00%
 
 \PhpBench\Benchmarks\Macro\LogBench
 
-    benchLog................................I9 [μ Mo]/r: 0.010 0.010 (s) [μSD μRSD]/r: 0.000s 2.07%
+    benchLog................................I9 [μ Mo]/r: 0.011 0.011 (s) [μSD μRSD]/r: 0.000s 1.59%
 
 \PhpBench\Benchmarks\Macro\benchmarks\NothingBench
 
-    benchNothing............................I0 [μ Mo]/r: 2.000 2.000 (μs) [μSD μRSD]/r: 0.000μs 0.00%
+    benchNothing............................I0 [μ Mo]/r: 1.000 1.000 (μs) [μSD μRSD]/r: 0.000μs 0.00%
 
 \PhpBench\Benchmarks\Macro\RunBench
 
-    benchRun................................I9 [μ Mo]/r: 0.110 0.109 (s) [μSD μRSD]/r: 0.002s 1.69%
-    benchRunAndReport.......................I9 [μ Mo]/r: 0.110 0.109 (s) [μSD μRSD]/r: 0.002s 1.48%
+    benchRun................................I9 [μ Mo]/r: 0.104 0.103 (s) [μSD μRSD]/r: 0.002s 1.57%
+    benchRunAndReport.......................I9 [μ Mo]/r: 0.104 0.103 (s) [μSD μRSD]/r: 0.001s 0.72%
 
 \PhpBench\Benchmarks\Macro\ReportBench
 
-    benchAggregate..........................I9 [μ Mo]/r: 0.002 0.002 (s) [μSD μRSD]/r: 0.000s 2.97%
-    benchDefault............................I9 [μ Mo]/r: 0.002 0.002 (s) [μSD μRSD]/r: 0.000s 6.09%
-    benchEnv................................I9 [μ Mo]/r: 0.002 0.002 (s) [μSD μRSD]/r: 0.000s 4.99%
+    benchAggregate..........................I9 [μ Mo]/r: 0.002 0.002 (s) [μSD μRSD]/r: 0.000s 5.05%
+    benchDefault............................I9 [μ Mo]/r: 0.002 0.002 (s) [μSD μRSD]/r: 0.000s 3.68%
+    benchEnv................................I9 [μ Mo]/r: 0.002 0.002 (s) [μSD μRSD]/r: 0.000s 2.61%
 
 13 subjects, 151 iterations, 2,527 revs, 0 rejects, 0 failures, 0 warnings
-(best [mean mode] worst) = 0.181 [14,822.750 14,672.939] 0.187 (μs)
-⅀T: 2,371,621.925μs μSD/r 249.760μs μRSD/r: 3.175%
-suite: 1343b0df9cb075a428fe80cdc43b6127fdd878e7, date: 2020-02-05, stime: 11:14:35
+(best [mean mode] worst) = 0.187 [14,066.545 13,990.617] 0.190 (μs)
+⅀T: 2,250,638.140μs μSD/r 175.495μs μRSD/r: 2.586%
+suite: 1343b0fa06d60e3095d7e5b526b55d5e9247b685, date: 2020-02-07, stime: 19:08:35
 +-----------------+------------------------+---------------+------+-----+------------+-----------+-----------+-----------+-----------+-----------+--------+-------------+
 | benchmark       | subject                | set           | revs | its | mem_peak   | best      | mean      | mode      | worst     | stdev     | rstdev | diff        |
 +-----------------+------------------------+---------------+------+-----+------------+-----------+-----------+-----------+-----------+-----------+--------+-------------+
-| HashingBench    | benchAlgos             | 0             | 1000 | 10  | 1,466,448b | 0.181μs   | 0.185μs   | 0.186μs   | 0.187μs   | 0.002μs   | 1.00%  | 1.00x       |
-| HashingBench    | benchAlgos             | 1             | 1000 | 10  | 1,466,448b | 0.377μs   | 0.386μs   | 0.377μs   | 0.460μs   | 0.025μs   | 6.42%  | 2.09x       |
-| KdeBench        | benchKde               | ten points    | 100  | 10  | 1,466,824b | 0.0220ms  | 0.0222ms  | 0.0221ms  | 0.0226ms  | 0.0002ms  | 0.72%  | 119.99x     |
-| KdeBench        | benchKde               | twenty points | 100  | 10  | 1,466,824b | 0.0386ms  | 0.0393ms  | 0.0388ms  | 0.0443ms  | 0.0017ms  | 4.26%  | 212.85x     |
-| KdeBench        | benchKde               | forty points  | 100  | 10  | 1,466,824b | 0.0670ms  | 0.0675ms  | 0.0671ms  | 0.0689ms  | 0.0007ms  | 1.00%  | 365.65x     |
-| StatisticsBench | benchVariance          | 0             | 100  | 10  | 1,466,432b | 0.64μs    | 0.67μs    | 0.66μs    | 0.70μs    | 0.02μs    | 3.17%  | 3.60x       |
-| StatisticsBench | benchStDev             | 0             | 100  | 10  | 1,466,432b | 0.68μs    | 0.72μs    | 0.72μs    | 0.75μs    | 0.02μs    | 3.07%  | 3.88x       |
-| ContainerBench  | benchInitNoExtensions  | 0             | 10   | 10  | 1,466,104b | 0.000031s | 0.000033s | 0.000032s | 0.000041s | 0.000003s | 8.38%  | 177.59x     |
-| ContainerBench  | benchInitCoreExtension | 0             | 10   | 10  | 1,582,512b | 0.000240s | 0.000245s | 0.000242s | 0.000270s | 0.000009s | 3.50%  | 1,325.55x   |
-| LogBench        | benchLog               | 0             | 1    | 10  | 4,042,280b | 0.010s    | 0.010s    | 0.010s    | 0.011s    | 0.000s    | 2.07%  | 55,774.23x  |
-| NothingBench    | benchNothing           | 0             | 1    | 1   | 1,466,040b | 2.000μs   | 2.000μs   | 2.000μs   | 2.000μs   | 0.000μs   | 0.00%  | 10.83x      |
-| RunBench        | benchRun               | 0             | 1    | 10  | 3,100,712b | 0.108s    | 0.110s    | 0.109s    | 0.114s    | 0.002s    | 1.69%  | 595,754.74x |
-| RunBench        | benchRunAndReport      | 0             | 1    | 10  | 3,169,488b | 0.108s    | 0.110s    | 0.109s    | 0.113s    | 0.002s    | 1.48%  | 597,476.99x |
-| ReportBench     | benchAggregate         | 0             | 1    | 10  | 2,654,696b | 0.002s    | 0.002s    | 0.002s    | 0.002s    | 0.000s    | 2.97%  | 10,747.16x  |
-| ReportBench     | benchDefault           | 0             | 1    | 10  | 2,654,696b | 0.002s    | 0.002s    | 0.002s    | 0.002s    | 0.000s    | 6.09%  | 10,644.29x  |
-| ReportBench     | benchEnv               | 0             | 1    | 10  | 2,654,696b | 0.002s    | 0.002s    | 0.002s    | 0.002s    | 0.000s    | 4.99%  | 11,429.34x  |
+| HashingBench    | benchAlgos             | 0             | 1000 | 10  | 2,650,800b | 0.187μs   | 0.189μs   | 0.190μs   | 0.190μs   | 0.001μs   | 0.60%  | 1.00x       |
+| HashingBench    | benchAlgos             | 1             | 1000 | 10  | 2,650,800b | 0.394μs   | 0.396μs   | 0.396μs   | 0.398μs   | 0.001μs   | 0.24%  | 2.10x       |
+| KdeBench        | benchKde               | ten points    | 100  | 10  | 2,651,080b | 0.0207ms  | 0.0212ms  | 0.0209ms  | 0.0233ms  | 0.0008ms  | 3.66%  | 112.10x     |
+| KdeBench        | benchKde               | twenty points | 100  | 10  | 2,651,080b | 0.0369ms  | 0.0376ms  | 0.0372ms  | 0.0388ms  | 0.0006ms  | 1.55%  | 198.85x     |
+| KdeBench        | benchKde               | forty points  | 100  | 10  | 2,651,080b | 0.0665ms  | 0.0672ms  | 0.0667ms  | 0.0687ms  | 0.0007ms  | 1.07%  | 355.52x     |
+| StatisticsBench | benchVariance          | 0             | 100  | 10  | 2,649,464b | 0.68μs    | 0.70μs    | 0.69μs    | 0.75μs    | 0.02μs    | 3.43%  | 3.73x       |
+| StatisticsBench | benchStDev             | 0             | 100  | 10  | 2,649,464b | 0.73μs    | 0.76μs    | 0.75μs    | 0.80μs    | 0.02μs    | 2.56%  | 4.02x       |
+| ContainerBench  | benchInitNoExtensions  | 0             | 10   | 10  | 2,649,104b | 0.000013s | 0.000013s | 0.000013s | 0.000016s | 0.000001s | 7.03%  | 69.93x      |
+| ContainerBench  | benchInitCoreExtension | 0             | 10   | 10  | 2,936,576b | 0.000118s | 0.000123s | 0.000120s | 0.000143s | 0.000007s | 6.00%  | 651.99x     |
+| LogBench        | benchLog               | 0             | 1    | 10  | 6,334,880b | 0.010s    | 0.011s    | 0.011s    | 0.011s    | 0.000s    | 1.59%  | 56,304.92x  |
+| NothingBench    | benchNothing           | 0             | 1    | 1   | 2,649,072b | 1.000μs   | 1.000μs   | 1.000μs   | 1.000μs   | 0.000μs   | 0.00%  | 5.29x       |
+| RunBench        | benchRun               | 0             | 1    | 10  | 5,925,784b | 0.102s    | 0.104s    | 0.103s    | 0.107s    | 0.002s    | 1.57%  | 548,296.45x |
+| RunBench        | benchRunAndReport      | 0             | 1    | 10  | 6,887,392b | 0.103s    | 0.104s    | 0.103s    | 0.106s    | 0.001s    | 0.72%  | 548,955.53x |
+| ReportBench     | benchAggregate         | 0             | 1    | 10  | 4,889,032b | 0.002s    | 0.002s    | 0.002s    | 0.003s    | 0.000s    | 5.05%  | 12,394.39x  |
+| ReportBench     | benchDefault           | 0             | 1    | 10  | 4,877,088b | 0.002s    | 0.002s    | 0.002s    | 0.002s    | 0.000s    | 3.68%  | 11,632.61x  |
+| ReportBench     | benchEnv               | 0             | 1    | 10  | 4,691,608b | 0.002s    | 0.002s    | 0.002s    | 0.002s    | 0.000s    | 2.61%  | 12,460.56x  |
 +-----------------+------------------------+---------------+------+-----+------------+-----------+-----------+-----------+-----------+-----------+--------+-------------+
 
 ```
