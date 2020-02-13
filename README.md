@@ -7,9 +7,7 @@ macOS package need CPU >= Sandy Bridge(2011), os >= 10.9(Mavericks).
 macOS package also work for VM with Penryn(+aes, +avx) CPU.
 
 Our package build with `-Ofast` for better performance, check our [benchmarks](https://github.com/phpstatic/phpstatic.com/blob/master/benchmarks.md) or [run it](https://github.com/phpbench/phpbench) your self.
- 
-Linux package build with `Full RELRO`, `NX enabled`, `pie`, `noexecstack` to improve security.
- 
+
 Our package is immune to LD_PRELOAD preload attacks like [this](https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD).
 
 # [docker](https://hub.docker.com/r/phpstatic/php)
