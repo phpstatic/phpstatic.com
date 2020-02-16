@@ -1,14 +1,14 @@
 # https://phpstatic.com
 
-Linux package need  CPU support AVX,  kernel >= 4.4.10
+PHPStatic package is build for better performance, check our [benchmarks](https://github.com/phpstatic/phpstatic.com/blob/master/benchmarks.md).
 
-macOS package need CPU >= Sandy Bridge(2011), os >= 10.9(Mavericks).
+PHPStatic package also build for security,  by add gcc flags `-fstack-clash-protection`, `-fstack-protector-strong`, `-Wp,-D_FORTIFY_SOURCE=2`, `-Wp,-D_GLIBCXX_ASSERTIONS`, `-fPIE`, `-Wl,-z,now`, `-Wl,-z,relro`, `-Wl,-z,text`, `-Wl,-z,noexecstack` to enable `Address space layout randomization`, `Full RELRO`, `STACK CANARY`, `non-executable stack`, `FORTIFY`, `stack clash protection`, `stack overflow protection`.
 
-macOS package also work for VM with Penryn(+aes, +avx) CPU.
+PHPStatic is immune to LD_PRELOAD preload attacks like [this](https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD).
 
-Our package build with `-Ofast` for better performance, check our [benchmarks](https://github.com/phpstatic/phpstatic.com/blob/master/benchmarks.md) or [run it](https://github.com/phpbench/phpbench) your self.
+Linux package need CPU support AVX.
 
-Our package is immune to LD_PRELOAD preload attacks like [this](https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD).
+macOS package need CPU >= Sandy Bridge(2011), os >= 10.9(Mavericks), macOS package also work for VM with Penryn(+aes, +avx) CPU.
 
 # [docker](https://hub.docker.com/r/phpstatic/php)
 
