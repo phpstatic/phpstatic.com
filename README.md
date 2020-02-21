@@ -197,6 +197,7 @@ xlswriter
 xml
 xmlreader
 xmlwriter
+xsl
 yaml
 yar
 Zend OPcache
