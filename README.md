@@ -192,6 +192,7 @@ sysvshm
 tideways_xhprof
 tidy
 tokenizer
+wasm
 xdebug
 xlswriter
 xml
