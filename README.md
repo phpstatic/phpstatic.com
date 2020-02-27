@@ -33,7 +33,7 @@ docker exec -i -t php74 ash
 this work with systemd,  for old debian/ubuntu please try docker or https://phpstatic.com/linux/
 
 ```sh
-echo deb https://phpstatic.com/debian/ / > /etc/apt/sources.list.d/phpstatic.list
+echo deb http://phpstatic.com/debian/ / > /etc/apt/sources.list.d/phpstatic.list
 curl -L https://phpstatic.com/repo.gpg | sudo apt-key add -
 apt-get update
 apt-get install php-static-7.4 nginx-static
@@ -65,7 +65,7 @@ systemctl status php-fpm
 
 ```sh
 curl -o /etc/apk/keys/phpstatic.com-5e2a99b5.rsa.pub -L https://phpstatic.com/alpine/phpstatic.com-5e2a99b5.rsa.pub
-echo https://phpstatic.com/alpine >> /etc/apk/repositories
+echo http://phpstatic.com/alpine >> /etc/apk/repositories
 apk update
 apk add php-static-7.4 nginx-static 
 /etc/init.d/php-fpm status
