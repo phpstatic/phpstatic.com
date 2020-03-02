@@ -34,6 +34,7 @@ this work with systemd,  for old debian/ubuntu please try docker or https://phps
 
 ```sh
 echo deb http://phpstatic.com/debian/ / > /etc/apt/sources.list.d/phpstatic.list
+apt-get install gnupg
 curl -L https://phpstatic.com/repo.gpg | sudo apt-key add -
 apt-get update
 apt-get install php-static-7.4 nginx-static
