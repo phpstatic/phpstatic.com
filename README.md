@@ -166,6 +166,7 @@ pdo_mysql
 pdo_pgsql
 pdo_sqlite
 pgsql
+phalcon
 Phar
 posix
 protobuf
