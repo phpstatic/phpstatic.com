@@ -146,6 +146,7 @@ iconv
 igbinary
 imap
 intl
+ip2region
 json
 json_post
 jwt
@@ -193,6 +194,7 @@ sysvshm
 tideways_xhprof
 tidy
 tokenizer
+trie_filter
 wasm
 xdebug
 xlswriter
