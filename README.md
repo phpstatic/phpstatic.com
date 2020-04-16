@@ -16,7 +16,7 @@ run this on your project dirs:
 
 ```sh
 docker pull phpstatic/php:7.4.5
-docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.2
+docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.5
 docker logs php74
 docker volume inspect php74_etc
 docker exec -i -t php74 composer install
