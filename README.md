@@ -15,7 +15,7 @@ macOS package need CPU >= Sandy Bridge(2011), os >= 10.9(Mavericks), macOS packa
 run this on your project dirs:
 
 ```sh
-docker pull phpstatic/php:7.4.4
+docker pull phpstatic/php:7.4.5
 docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.2
 docker logs php74
 docker volume inspect php74_etc
