@@ -10,7 +10,7 @@ Linux package need CPU support AVX.
 
 [macOS package](https://phpstatic.com/macOS/) need CPU >= Sandy Bridge(2011), os >= 10.13(High Sierra), [macOS package](https://phpstatic.com/macOS/) also work for VM with Penryn(+aes, +avx) CPU.
 
-[maxOS >= 10.9 Mavericks](https://phpstatic.com/osx109/) package is not support any more, you can still use [old MAC OSX packages](https://phpstatic.com/osx109/).
+[maxOS >= 10.9 Mavericks](https://phpstatic.com/osx109/) package is not support any more, you can download [old MAC OSX packages](https://phpstatic.com/osx109/) for develop only.
 
 # [docker](https://hub.docker.com/r/phpstatic/php)
 
