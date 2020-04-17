@@ -8,7 +8,7 @@ PHPStatic is immune to LD_PRELOAD preload attacks like [this](https://github.com
 
 Linux package need CPU support AVX.
 
-macOS package need CPU >= Sandy Bridge(2011), os >= 10.13(High Sierra), macOS package also work for VM with Penryn(+aes, +avx) CPU.
+[macOS package](https://phpstatic.com/macOS/) need CPU >= Sandy Bridge(2011), os >= 10.13(High Sierra), [macOS package](https://phpstatic.com/macOS/) also work for VM with Penryn(+aes, +avx) CPU.
 
 [maxOS >= 10.9 Mavericks](https://phpstatic.com/osx109/) package is not support any more, you can still use [old](https://phpstatic.com/osx109/) packages.
 
