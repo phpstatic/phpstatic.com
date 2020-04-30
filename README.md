@@ -221,7 +221,7 @@ Zend OPcache
 
 # nginx -V
 
-nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.4.0), ssl_stapling support. 
+nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.4.0), ssl_stapling+BoringSSL support. 
 
 ```sh
 nginx version: nginx/1.18.0 (nginx)
