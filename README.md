@@ -2,7 +2,7 @@
 
 PHPStatic package is build for better performance, check our [benchmarks](https://github.com/phpstatic/phpstatic.com/blob/master/benchmarks.md).
 
-PHPStatic package is build as static shared object, to reduce the dynamic library runtime overheads and attack surface. Static link also allow our package suite for most of linux distribution, avoid dependent library not match during upgrade system. 
+PHPStatic package is build as static shared object, to reduce the dynamic library runtime overheads and attack surface. Static link also allow our package suite for most of linux distribution, avoid dependent library miss match problem during system upgrade time. 
 ```sh
 $ file /usr/local/bin/php
 /usr/local/bin/php: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, stripped
