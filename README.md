@@ -39,12 +39,7 @@ Program Headers:
    03     .tdata .tbss 
    04     .eh_frame_hdr 
    05     
-   06     .tdata .init_array .fini_array .ctors .dtors .data.rel.ro .dynamic .got
-   
-$ otool -L /usr/local/bin/php # for macOS package
-/usr/local/bin/php:
-	/usr/lib/libresolv.9.dylib (compatibility version 1.0.0, current version 1.0.0)
-	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.50.4)   
+   06     .tdata .init_array .fini_array .ctors .dtors .data.rel.ro .dynamic .got 
 ```
 
 
