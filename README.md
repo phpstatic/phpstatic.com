@@ -2,6 +2,52 @@
 
 PHPStatic package is build for better performance, check our [benchmarks](https://github.com/phpstatic/phpstatic.com/blob/master/benchmarks.md).
 
+PHPStatic package is build as static shared object, to reduce the dynamic library runtime overheads and attack surface. Static link also allow our package suite for most of linux distribution, avoid dependent library not match during upgrade system. 
+```sh
+$ file /usr/local/bin/php
+/usr/local/bin/php: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, stripped
+
+$ readelf -l ./php
+
+Elf file type is DYN (Shared object file)
+Entry point 0x37f9a8
+There are 7 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  LOAD           0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000002b48980 0x0000000002b48980  R E    0x200000
+  LOAD           0x0000000002b49920 0x0000000002d49920 0x0000000002d49920
+                 0x0000000000256b80 0x000000000035ee48  RW     0x200000
+  DYNAMIC        0x0000000002d45540 0x0000000002f45540 0x0000000002f45540
+                 0x00000000000001d0 0x00000000000001d0  RW     0x8
+  TLS            0x0000000002b49920 0x0000000002d49920 0x0000000002d49920
+                 0x0000000000000088 0x0000000000005d98  R      0x20
+  GNU_EH_FRAME   0x000000000278ccbc 0x000000000278ccbc 0x000000000278ccbc
+                 0x0000000000080d5c 0x0000000000080d5c  R      0x4
+  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000000 0x0000000000000000  RW     0x10
+  GNU_RELRO      0x0000000002b49920 0x0000000002d49920 0x0000000002d49920
+                 0x00000000001fd6e0 0x00000000001fd6e0  R      0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .hash .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_d .rela.dyn .init .plt .text .fini .rodata .eh_frame_hdr .eh_frame .gcc_except_table 
+   01     .tdata .init_array .fini_array .ctors .dtors .data.rel.ro .dynamic .got .data .bss 
+   02     .dynamic 
+   03     .tdata .tbss 
+   04     .eh_frame_hdr 
+   05     
+   06     .tdata .init_array .fini_array .ctors .dtors .data.rel.ro .dynamic .got
+   
+$ otool -L /usr/local/bin/php # for macOS package
+/usr/local/bin/php:
+	/usr/lib/libresolv.9.dylib (compatibility version 1.0.0, current version 1.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.50.4)   
+```
+
+
 PHPStatic package also build for security,  by add gcc flags `-fstack-clash-protection`, `-fstack-protector-strong`, `-Wp,-D_FORTIFY_SOURCE=2`, `-Wp,-D_GLIBCXX_ASSERTIONS`, `-fPIE`, `-Wl,-z,now`, `-Wl,-z,relro`, `-Wl,-z,text`, `-Wl,-z,noexecstack` to enable `Address space layout randomization`, `Full RELRO`, `STACK CANARY`, `non-executable stack`, `FORTIFY`, `stack clash protection`, `stack overflow protection`.
 
 PHPStatic is immune to LD_PRELOAD preload attacks like [this](https://github.com/yangyangwithgnu/bypass_disablefunc_via_LD_PRELOAD).
@@ -17,8 +63,8 @@ Linux package need CPU support AVX.
 run this on your project dirs:
 
 ```sh
-docker pull phpstatic/php:7.4.5
-docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.5
+docker pull phpstatic/php:7.4.9
+docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.9
 docker logs php74
 docker volume inspect php74_etc
 docker exec -i -t php74 composer install
@@ -221,7 +267,7 @@ Zend OPcache
 
 # nginx -V
 
-nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.4.0), ssl_stapling+BoringSSL support. 
+nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.4.3), [io_uring](https://github.com/hakasenyang/openssl-patch/pull/41), ssl_stapling+BoringSSL support(the only solution that support multi domain without cronjob). 
 
 ```sh
 nginx version: nginx/1.18.0 (nginx)
