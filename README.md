@@ -130,6 +130,8 @@ apk add php-static-7.4 nginx-static
 
 ```sh
 curl -O https://phpstatic.com/php-static-7.4-latest-linux-x64.tar.gz
+curl -O https://phpstatic.com/nginx-static-latest-linux-x64.tar.gz
+tar xvf php-static-* -C /
 tar xvf nginx-static-* -C /
 
 /usr/local/bin/php-fpm
