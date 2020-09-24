@@ -58,8 +58,8 @@ Linux package need CPU support AVX.
 run this on your project dirs:
 
 ```sh
-docker pull phpstatic/php:7.4.9
-docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.9
+docker pull phpstatic/php:7.4.10
+docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.10
 docker logs php74
 docker volume inspect php74_etc
 docker exec -i -t php74 composer install
@@ -265,6 +265,8 @@ Zend OPcache
 # nginx -V
 
 nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.4.3), [io_uring](https://github.com/hakasenyang/openssl-patch/pull/41), ssl_stapling+BoringSSL support(the only solution that support multi domain without cronjob). 
+
+nginx-uring require kernel >= 5.1.
 
 ```sh
 nginx version: nginx/1.18.0 (nginx)
