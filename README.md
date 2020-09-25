@@ -170,15 +170,19 @@ not ready yet, try docker
 [PHP Modules]
 amqp
 apcu
+ast
+base58
 bcmath
 brotli
 bz2
 calendar
+componere
 Core
 ctype
 curl
 date
 dom
+event
 exif
 fileinfo
 filter
@@ -192,6 +196,7 @@ igbinary
 imap
 intl
 ip2region
+jsmin
 json
 json_post
 jwt
@@ -228,6 +233,7 @@ snappy
 soap
 sockets
 sodium
+solr
 SPL
 SPX
 sqlite3
@@ -242,12 +248,14 @@ tidy
 tokenizer
 trie_filter
 wasm
+xattr
 xdebug
 xlswriter
 xml
 xmlreader
 xmlwriter
 xsl
+yaconf
 yaml
 yar
 Zend OPcache
