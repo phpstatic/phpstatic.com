@@ -149,7 +149,8 @@ tar xvf php-static-* -C /
 otool -L /usr/local/bin/php
 /usr/local/bin/php:
 	/usr/lib/libresolv.9.dylib (compatibility version 1.0.0, current version 1.0.0)
-	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.250.1)
+	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 1455.12.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.50.4)
 ```
 
 # Windows 
