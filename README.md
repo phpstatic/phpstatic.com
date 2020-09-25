@@ -163,7 +163,7 @@ not ready yet, try docker
 
 # [xdebug](https://github.com/xdebug/xdebug), [tideways_xhprof](https://github.com/tideways/php-xhprof-extension.git), [SPX](https://github.com/NoiseByNorthwest/php-spx.git), [SeasLog](https://github.com/SeasX/SeasLog), [wasm](https://github.com/wasmerio/php-ext-wasm)
 
-`xdebug`, `tideways_xhprof`, `SPX`, `SeasLog`, `wasm` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
+`xdebug`, `tideways_xhprof`, `SPX`, `SeasLog`, `wasm`, `ast`, `componere`, `xattr` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
 
 # [php -m](https://phpstatic.com/phpinfo.html)
 ```ini
