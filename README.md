@@ -221,6 +221,7 @@ phalcon
 Phar
 posix
 protobuf
+pspell
 psr
 rdkafka
 readline
