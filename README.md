@@ -83,7 +83,7 @@ apt-get update
 apt-get install php-static-7.4 nginx-static
 /etc/init.d/php-fpm status
 ```
-# redhat, centos >=7
+# Fedora/Red Hat/CentOS/SUSE
 
 * https://phpstatic.com/php-static-7.4-latest-x86_64.rpm
 * https://phpstatic.com/php-static-7.3-latest.x86_64.rpm
