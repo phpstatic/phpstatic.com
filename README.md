@@ -1,4 +1,4 @@
-# https://phpstatic.com
+# [https://phpstatic.com](https://phpstatic.com/phpinfo.html)
 
 PHPStatic package is build for better performance, check our [benchmarks](https://github.com/phpstatic/phpstatic.com/blob/master/benchmarks.md).
 
