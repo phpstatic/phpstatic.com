@@ -245,6 +245,7 @@ swoole_orm
 sysvmsg
 sysvsem
 sysvshm
+thrift_protocol
 tideways_xhprof
 tidy
 tokenizer
