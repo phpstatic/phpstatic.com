@@ -224,6 +224,7 @@ posix
 protobuf
 pspell
 psr
+rar
 rdkafka
 readline
 redis
