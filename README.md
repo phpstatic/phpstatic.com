@@ -202,6 +202,7 @@ json
 json_post
 jwt
 libxml
+lz4
 mbstring
 memcached
 mongodb
