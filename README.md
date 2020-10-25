@@ -192,6 +192,7 @@ gd
 gmp
 grpc
 hash
+hoedown
 iconv
 igbinary
 imap
@@ -229,6 +230,7 @@ rdkafka
 readline
 redis
 Reflection
+sass
 SeasLog
 session
 shmop
@@ -247,6 +249,7 @@ swoole_orm
 sysvmsg
 sysvsem
 sysvshm
+taint
 thrift_protocol
 tideways_xhprof
 tidy
