@@ -162,9 +162,11 @@ try docker or https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 not ready yet, try docker 
 
-# [xdebug](https://github.com/xdebug/xdebug), [tideways_xhprof](https://github.com/tideways/php-xhprof-extension.git), [SPX](https://github.com/NoiseByNorthwest/php-spx.git), [SeasLog](https://github.com/SeasX/SeasLog), [wasm](https://github.com/wasmerio/php-ext-wasm)
+# [xdebug](https://github.com/xdebug/xdebug), [tideways_xhprof](https://github.com/tideways/php-xhprof-extension.git), [SPX](https://github.com/NoiseByNorthwest/php-spx.git), [SeasLog](https://github.com/SeasX/SeasLog), [wasm](https://github.com/wasmerio/php-ext-wasm), [taint](https://github.com/laruence/taint), [ast](https://github.com/nikic/php-ast), [componere](https://github.com/krakjoe/componere)
 
-`xdebug`, `tideways_xhprof`, `SPX`, `SeasLog`, `wasm`, `ast`, `componere`, `xattr` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
+`xdebug`, `taint`, `tideways_xhprof`, `SPX`, `SeasLog`, `wasm`, `ast`, `componere`, `xattr` is default disabled, to enable it add `disable_extensions=none` into `php.ini`.
+
+`xdebug` conflict with `taint`, remember just enable one of them.
 
 # [php -m](https://phpstatic.com/phpinfo.html)
 ```ini
