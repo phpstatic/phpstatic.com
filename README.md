@@ -58,8 +58,8 @@ Linux package need CPU support AVX.
 run this on your project dirs:
 
 ```sh
-docker pull phpstatic/php:7.4.11
-docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.11
+docker pull phpstatic/php:7.4.13
+docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.13
 docker logs php74
 docker volume inspect php74_etc
 docker exec -i -t php74 composer install
@@ -68,6 +68,7 @@ docker exec -i -t php74 ash
 
 # debian, ubuntu 
 
+* https://phpstatic.com/php-static-8.0-latest-amd64.deb
 * https://phpstatic.com/php-static-7.4-latest-amd64.deb
 * https://phpstatic.com/php-static-7.3-latest-amd64.deb
 * https://phpstatic.com/php-static-7.2-latest-amd64.deb
@@ -85,6 +86,7 @@ apt-get install php-static-7.4 nginx-static
 ```
 # CentOS/Fedora/Red Hat/SUSE
 
+* https://phpstatic.com/php-static-8.0-latest-x86_64.rpm
 * https://phpstatic.com/php-static-7.4-latest-x86_64.rpm
 * https://phpstatic.com/php-static-7.3-latest.x86_64.rpm
 * https://phpstatic.com/php-static-7.2-latest.x86_64.rpm
@@ -102,6 +104,7 @@ systemctl status php-fpm
 
 # alpine 
 
+* https://phpstatic.com/php-static-8.0-latest-x86_64.apk
 * https://phpstatic.com/php-static-7.4-latest-x86_64.apk
 * https://phpstatic.com/php-static-7.3-latest-x86_64.apk
 * https://phpstatic.com/php-static-7.2-latest-x86_64.apk
@@ -117,6 +120,7 @@ apk add php-static-7.4 nginx-static
 
 # others linux
 
+* https://phpstatic.com/php-static-8.0-latest-linux-x64.tar.gz
 * https://phpstatic.com/php-static-7.4-latest-linux-x64.tar.gz
 * https://phpstatic.com/php-static-7.3-latest-linux-x64.tar.gz
 * https://phpstatic.com/php-static-7.2-latest-linux-x64.tar.gz
@@ -139,6 +143,7 @@ killall php-fpm
 
 # macOS
 
+* https://phpstatic.com/php-static-8.0-latest-osx-x64.tar.gz
 * https://phpstatic.com/php-static-7.4-latest-osx-x64.tar.gz
 * https://phpstatic.com/php-static-7.3-latest-osx-x64.tar.gz
 * https://phpstatic.com/php-static-7.2-latest-osx-x64.tar.gz
