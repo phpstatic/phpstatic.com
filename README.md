@@ -270,6 +270,7 @@ xml
 xmlreader
 xmlwriter
 xsl
+xxhash
 yaconf
 yaml
 yar
@@ -287,7 +288,7 @@ Zend OPcache
 
 # nginx -V
 
-nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.4.3), [io_uring](https://github.com/hakasenyang/openssl-patch/pull/41), ssl_stapling+BoringSSL support(the only solution that support multi domain without cronjob). 
+nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.5.0), [io_uring](https://github.com/hakasenyang/openssl-patch/pull/41), ssl_stapling+BoringSSL support(the only solution that support multi domain without cronjob). 
 
 nginx-uring require kernel >= 5.1.
 
