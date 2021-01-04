@@ -292,6 +292,8 @@ nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](
 
 nginx build with ModSecurity (https://github.com/SpiderLabs/ModSecurity-nginx) support. 
 
+build -flto=full.
+
 nginx-uring require kernel >= 5.1.
 
 ```sh
