@@ -80,7 +80,8 @@ this work with systemd,  for old debian/ubuntu please try docker or https://phps
 echo deb http://phpstatic.com/debian/ / > /etc/apt/sources.list.d/phpstatic.list
 apt-get install gnupg curl sudo
 curl -L https://phpstatic.com/repo.gpg | sudo apt-key add -
-curl -L http://phpstatic.com/repo.gpg | sudo apt-key --keyring /etc/apt/trusted.gpg.d/phpstatic.gpg add -
+# for debian 11
+curl -L https://phpstatic.com/repo.gpg | sudo apt-key --keyring /etc/apt/trusted.gpg.d/phpstatic.gpg add -
 apt-get update
 apt-get install php-static-7.4 nginx-static
 /etc/init.d/php-fpm status
