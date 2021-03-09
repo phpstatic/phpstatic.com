@@ -53,19 +53,6 @@ Linux package need CPU support AVX.
 
 [maxOS >= 10.9 Mavericks](https://phpstatic.com/osx109/) package is not support any more, you can download [old MAC OSX packages](https://phpstatic.com/osx109/) for develop only.
 
-# [docker](https://hub.docker.com/r/phpstatic/php)
-
-run this on your project dirs:
-
-```sh
-docker pull phpstatic/php:7.4.15
-docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.15
-docker logs php74
-docker volume inspect php74_etc
-docker exec -i -t php74 composer install
-docker exec -i -t php74 ash
-```
-
 # debian, ubuntu 
 
 * https://phpstatic.com/php-static-8.0-latest-amd64.deb
@@ -158,6 +145,19 @@ otool -L /usr/local/bin/php
 	/usr/lib/libresolv.9.dylib (compatibility version 1.0.0, current version 1.0.0)
 	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 1455.12.0)
 	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.50.4)
+```
+
+# [docker](https://hub.docker.com/r/phpstatic/php)
+
+run this on your project dirs:
+
+```sh
+docker pull phpstatic/php:7.4.15
+docker run --name php74 -itd -v $(pwd):/app --mount source=php74_etc,target=/usr/local/etc/php phpstatic/php:7.4.15
+docker logs php74
+docker volume inspect php74_etc
+docker exec -i -t php74 composer install
+docker exec -i -t php74 ash
 ```
 
 # Windows 
@@ -255,7 +255,6 @@ SPX
 sqlite3
 standard
 swoole
-swoole_orm
 sysvmsg
 sysvsem
 sysvshm
@@ -265,7 +264,6 @@ tideways_xhprof
 tidy
 tokenizer
 trie_filter
-wasm
 xattr
 xdebug
 xlswriter
@@ -289,15 +287,18 @@ Zend OPcache
 
 ```
 
+~~swoole_orm and wasm removed since 2021/03/08.~~
+
 # nginx -V
 
-nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.5.0), [io_uring](https://github.com/hakasenyang/openssl-patch/pull/41), ssl_stapling+BoringSSL support(the only solution that support multi domain without cronjob). 
+nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](https://github.com/nginx/njs.git)(0.5.1), [io_uring](https://github.com/hakasenyang/openssl-patch/pull/41), ssl_stapling+BoringSSL support(the only solution that support multi domain without cronjob). 
 
-nginx build with ModSecurity (https://github.com/SpiderLabs/ModSecurity-nginx) support. 
+~~nginx build with ModSecurity (https://github.com/SpiderLabs/ModSecurity-nginx) support. (remove until https://github.com/SpiderLabs/ModSecurity-nginx/issues/174 get fixed!)~~
 
 build -flto=full.
 
 nginx-uring require kernel >= 5.1 and avx2.
+nginx-openssl build without http3 (version is 1.19.7).
 
 ```sh
 nginx version: nginx/1.18.0 (nginx)
