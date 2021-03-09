@@ -298,6 +298,7 @@ nginx 1.18.0 is build with [http3](https://en.wikipedia.org/wiki/HTTP/3), [njs](
 build -flto=full.
 
 nginx-uring require kernel >= 5.1 and avx2.
+
 nginx-openssl build without http3 (version is 1.19.7).
 
 ```sh
