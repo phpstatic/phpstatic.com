@@ -77,7 +77,7 @@ apt-get install php-static-7.4 nginx-static
 
 * https://phpstatic.com/php-static-8.0-latest-x86_64.rpm
 * https://phpstatic.com/php-static-7.4-latest-x86_64.rpm
-* https://phpstatic.com/php-static-7.3-latest.x86_64.rpm
+* https://phpstatic.com/php-static-7.3-latest-x86_64.rpm
 * https://phpstatic.com/php-static-7.2-latest.x86_64.rpm
 * https://phpstatic.com/nginx-static-latest-x86_64.rpm
 
@@ -192,12 +192,15 @@ ctype
 curl
 date
 dom
+ds
+elastic_apm
 event
 exif
 fileinfo
 filter
 ftp
 gd
+gearman
 gettext
 gmp
 grpc
@@ -208,6 +211,8 @@ igbinary
 imap
 intl
 ip2region
+jchash
+jq
 jsmin
 json
 json_post
@@ -220,6 +225,7 @@ mongodb
 msgpack
 mysqli
 mysqlnd
+newrelic
 OAuth
 openssl
 pcntl
@@ -231,6 +237,7 @@ pdo_sqlite
 pgsql
 phalcon
 Phar
+pinpoint_php
 posix
 protobuf
 pspell
@@ -245,6 +252,7 @@ SeasLog
 session
 shmop
 SimpleXML
+skywalking
 snappy
 soap
 sockets
@@ -253,13 +261,12 @@ solr
 SPL
 SPX
 sqlite3
+ssh2
 standard
 swoole
 sysvmsg
 sysvsem
 sysvshm
-taint
-thrift_protocol
 tideways_xhprof
 tidy
 tokenizer
@@ -284,7 +291,6 @@ zstd
 [Zend Modules]
 Xdebug
 Zend OPcache
-
 ```
 
 ~~swoole_orm and wasm removed since 2021/03/08.~~
@@ -301,16 +307,16 @@ nginx-uring require kernel >= 5.1 and avx2.
 
 ```sh
 nginx version: nginx/1.18.0 (nginx)
-built by gcc version 10.2.1
+built by gcc version 10.3.0
 built with OpenSSL 1.1.0 (compatible; BoringSSL) (running with BoringSSL)
 TLS SNI support enabled
 configure arguments:--conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/lock/nginx.lock --user=www-data --group=www-data --without-select_module --with-poll_module --with-file-aio --with-threads --with-http_ssl_module --with-http_v2_module --with-http_realip_module --with-http_sub_module --with-http_stub_status_module --with-http_slice_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_auth_request_module --with-http_secure_link_module --with-stream --with-stream_ssl_module --with-stream_ssl_preread_module --with-stream_realip_module --with-pcre --with-pcre-jit --with-zlib --with-zlib-asm=pentiumpro --with-libatomic --with-http_addition_module --without-http_uwsgi_module --with-mail --with-mail_ssl_module --with-http_mp4_module --with-http_flv_module --add-module=devel_kit --add-module=brotli --add-module=zstd --add-module=substitutions_filter --add-module=headers-more --add-module=h264_streaming --add-module=vod --add-module=secure-token --add-module=flv --add-module=dynamic_limit_req --add-module=slice --add-module=njs/nginx --add-module=vts --with-http_geoip_module --with-stream_geoip_module --add-module=geoip2 --add-module=ipip --add-module=waf --add-module=security_headers --add-module=tcp-keepalive --add-module=websockify --with-http_v3_module --with-openssl --with-quiche
 ```
 
-nginx-openssl build without http3 (version is 1.19.9).
+nginx-openssl build without http3 (version is 1.21.0).
 ```sh
-nginx version: nginx/1.19.9 (nginx)
-built by gcc version 10.2.1
+nginx version: nginx/1.21.0 (nginx)
+built by gcc version 10.3.0
 built with OpenSSL 1.1.1k  16 Feb 2021
 TLS SNI support enabled
 configure arguments:--conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/lock/nginx.lock --user=www-data --group=www-data --without-select_module --with-poll_module --with-file-aio --with-threads --with-http_ssl_module --with-http_v2_module --with-http_realip_module --with-http_sub_module --with-http_stub_status_module --with-http_slice_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_auth_request_module --with-http_secure_link_module --with-stream --with-stream_ssl_module --with-stream_ssl_preread_module --with-stream_realip_module --with-pcre --with-pcre-jit --with-zlib --with-zlib-asm=pentiumpro --with-libatomic --with-http_addition_module --without-http_uwsgi_module --with-mail --with-mail_ssl_module --with-http_mp4_module --with-http_flv_module --add-module=devel_kit --add-module=brotli --add-module=zstd --add-module=substitutions_filter --add-module=headers-more --add-module=h264_streaming --add-module=vod --add-module=secure-token --add-module=flv --add-module=dynamic_limit_req --add-module=slice --add-module=njs/nginx --add-module=vts --with-http_geoip_module --with-stream_geoip_module --add-module=geoip2 --add-module=ipip --add-module=waf --add-module=security_headers --add-module=tcp-keepalive --add-module=websockify --with-openssl --with-http_v2_hpack_enc
